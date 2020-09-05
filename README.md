@@ -30,7 +30,12 @@ x2 = Temperatur der letzten 7 Tage
 ![](./img/modelsummary.png)
 ![](./img/something.jpg)
 
+Update Abend vom 05.09:
+Manchmal sieht man den Wald voller Bäume nicht, schnell auf ein Exponentielles Modell umgestiegen... 
 
+![](./img/newpred.png)
+
+Multiple R-squared:  0.6593
 
 
 ### Datafication
