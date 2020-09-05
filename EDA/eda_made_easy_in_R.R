@@ -1,6 +1,6 @@
 library(tidyverse)
 
-data <- read_csv("/Users/anni/dev/07_BewTool/07_SmarteBewaesserung/EDA/soilrain.csv")
+data <- read_csv("/Users/anni/dev/07_BewTool/07_SmarteBewaesserung/EDA/output_with_gis.csv")
 
 cor(data$cbar20cm, data$temp2m, method = c("pearson", "kendall", "spearman"))
 
@@ -25,16 +25,27 @@ summary(model20)
 model25 <- lm(train$cbar20cm ~ train$temp2m + train$sliding25)
 summary(model25)
 
-model252 <- lm(train$cbar20cm ~ train$tempslide7 / train$sliding25)
+model252 <- lm(log(train$cbar20cm) ~ train$tempslide7 / train$sliding25)
 summary(model252)
 
 model30 <- lm(train$cbar20cm ~ train$temp2m + train$sliding30)
 summary(model30)
 
+cor(data$cbar20cm, data$value, method = c("pearson", "kendall", "spearman"))
 
-p <- predict(model25, test)
+g_model <- lm(log(train$value) ~ train$cbar20cm)
+summary(g_model)
 
-ggplot(test) +
+ggplot(data) +
+  geom_point(aes(x=log(cbar20cm), y=value))
+
+
+model252 <- lm(log(cbar20cm) ~ tempslide7 / sliding25, data=data)
+summary(model252)
+
+data$predict <- predict(model252, data)
+
+ggplot(data) +
   geom_point(aes(x=cbar20cm, y=sliding25)) +
-  geom_abline(slope = model252$coefficients[2], intercept = model252$coefficients[1])
+  geom_point(aes(x=exp(data$predict), y=sliding25), color="red")
 
