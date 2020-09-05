@@ -39,7 +39,10 @@ Hier wurden vorallem die Möglichkeiten des MeteoTest Datensets für die Analyse
 
 Des weiteren haben wir versucht an Satelitendaten zu kommen um mit denen die Beschaffenheit des Bodens zu Berechnen. Elon Musk hatte aber gerade seinen Tesla in der Werkstatt und konnte uns die Daten nicht rechtzeitig schicken. Kommt noch, gäll Elon?
 
-![](./img/satelit.jpg)
+Update: Elon hat geliefert. Jedoch reicht die Zeit nicht aus um uns mit den GIS Daten auseinander zu setzen. Dafür gibt es an dieser Stelle ein Screenshot der Daten:
+![](./img/satelit.png)
+
+Auf dem Bild sieht man auf 1km * 1km genau welche Feuchtigkeit der Boden aufweist. 
 
 ### Interaction
 Gute Modelle und Daten bringen rein gar nix, wenn der Benutzer nicht damit interagieren kann. Deshalb hat sich unser UX Team direkt an ein Mockup gesetzt um die Bedürfnisse der Landwirte abzudecken. Angefangen hat es mit einem Use Case Diagram:
