@@ -1,4 +1,5 @@
-# Open Farming Hackdays Challenge 07
+### Open Farming Hackdays Challenge 07
+![](./img/DropAdvisor.jpg)
 ## DropAdvisor - Smarte Bewässerung – Eine Entscheidungshilfe
 
 ### Start with a Plan - Big Data Management Canvas
@@ -36,7 +37,7 @@ x2 = Temperatur der letzten 7 Tage
 Was: Welche Daten benötigen wir und wie kommen wir genau an diese Daten?
 Hier wurden vorallem die Möglichkeiten des MeteoTest Datensets für die Analyse angeschaut. Hierbei haben wir auf [bodenmessnetz.ch](https://bodenmessnetz.ch/messwerte/datenabfrage) die Messwerte der Sonde im Liebegg heruntergeladen und diese mit den Wetterdaten verknüpft.
 
-Des weiteren haben wir versucht an Satelitendaten zu kommen um mit denen die Beschaffenheit des Bodens zu Berechnen. Unser Satelit hatte aber ein bisschen Verzögerungen und konnte nicht rechtzeitig uns die Daten übermitteln. 
+Des weiteren haben wir versucht an Satelitendaten zu kommen um mit denen die Beschaffenheit des Bodens zu Berechnen. Elon Musk hatte aber gerade seinen Tesla in der Werkstatt und konnte uns die Daten nicht rechtzeitig schicken. Kommt noch, gäll Elon?
 
 ![](./img/satelit.jpg)
 
