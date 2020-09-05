@@ -1,5 +1,5 @@
 # Open Farming Hackdays Challenge 07
-## Smarte Bewässerung – Eine Entscheidungshilfe
+## DropAdvisor - Smarte Bewässerung – Eine Entscheidungshilfe
 
 ### Start with a Plan - Big Data Management Canvas
 Der Big Data Management Canvas ist der perfekte Ausgangspunkt für ein Daten Projekt. Hierbei schaut man das Projekt aus der Business sowie aus der technischen Sicht an. 
@@ -30,10 +30,21 @@ x2 = Temperatur der letzten 7 Tage
 ![](./img/something.jpg)
 
 
-Weiteres: Können wir GIS / Satelitendaten verwenden um die Bodenbeschaffenheit vorrauszusagen? TBD
 
 
 ### Datafication
 Was: Welche Daten benötigen wir und wie kommen wir genau an diese Daten?
+Hier wurden vorallem die Möglichkeiten des MeteoTest Datensets für die Analyse angeschaut. Hierbei haben wir auf [bodenmessnetz.ch](https://bodenmessnetz.ch/messwerte/datenabfrage) die Messwerte der Sonde im Liebegg heruntergeladen und diese mit den Wetterdaten verknüpft.
+
+Des weiteren haben wir versucht an Satelitendaten zu kommen um mit denen die Beschaffenheit des Bodens zu Berechnen. Unser Satelit hatte aber ein bisschen Verzögerungen und konnte nicht rechtzeitig uns die Daten übermitteln. 
+
+![](./img/satelit.jpg)
 
 ### Interaction
+Gute Modelle und Daten bringen rein gar nix, wenn der Benutzer nicht damit interagieren kann. Deshalb hat sich unser UX Team direkt an ein Mockup gesetzt um die Bedürfnisse der Landwirte abzudecken. Angefangen hat es mit einem Use Case Diagram:
+![](./img/UseCases.jpg)
+Dann haben wir uns ans Mockupen gewagt. Der fertige und Klickbare Mockup findet man hier:
+[Balsamiq Cloud](https://balsamiq.cloud/swkxz9c/pbt93op/r1892?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D]())
+
+![](./img/mockup.gif)
+
